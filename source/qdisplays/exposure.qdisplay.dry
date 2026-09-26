@@ -1,0 +1,10 @@
+
+# Exposure
+(..4.9) Concealed
+(5..14.9) Minimal
+(15..29.9) Low
+(30..49.9) Medium
+(50..64.9) High
+(65..74.9) Very High
+(75..89.9) Known
+(90..) Completely Exposed
