@@ -33,16 +33,6 @@ Q.old_demographics = 0;
 // TODO: not yet implemented
 Q.use_decimals = 0;
 
-// party resources
-Q.resources = 2;
-// party dues
-Q.dues = 2;
-
-// the state of the party
-// overall dissent reduces every increase in party support.
-Q.dissent = 0.05;
-Q.dissent_percent = 5;
-
 // factions
 // foundation resources
 Q.resources = 5;
@@ -69,7 +59,7 @@ Q.ci_raid = 3;
 
 // relations
 Q.ethics_commitee_relation = 70;
-Q.05_relation = 50;
+Q.council_relation = 50;
 
 // Advisors/Leaders
 Q.n_advisors = 3;
@@ -164,7 +154,7 @@ Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
 !}
-set-bg: img/map_2.jpg
+set-bg: img/Map.jpg
 new-page: true
 
 > *"Such a general development cannot be attributed to the false tactics of any single party or to the mistakes of individual leaders. On the contrary, the conduct of individual leaders is determined largely by the sentiments of the people as a whole. It would be erroneous, however, to regard the sentiments of the moment as reflecting the natural make-up and character of the people. They are merely the consequence of the special circumstances which have brought about this profound degradation of the entire nation."*
