@@ -14,8 +14,8 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-- @party
-- @govt
+- @inter
+- @global
 - #advisor
 - @shuffle_leadership_pinned
 
