@@ -30,20 +30,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: setup node
+      - name: setup cells
         uses: actions/setup-node@v4
         with:
           node-version: 16
-      - name: Install
+      - name: Installing viruses
         run: npm install
-      - name: Build game
+      - name: Building the Site Foundation
         run: npm run dendrynexus make-html -- --pretty
-      - name: Copy game.json to output
+      - name: Injecting Amnestic to D-Class
         run: cp out/game.json out/html/
-      - name: Upload artifact
+      - name: SCP Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'out/html'
-      - name: Deploy to GitHub Pages
+      - name: Securing, Containing, and Protecting for GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
