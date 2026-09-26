@@ -49,7 +49,6 @@ is-deck: true
 
 @global
 title: Global Affairs
-view-if:
 card-image: img/UN_2.png
 is-deck: true
 
