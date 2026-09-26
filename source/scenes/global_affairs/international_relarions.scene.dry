@@ -1,0 +1,39 @@
+title: International Relations
+new-page: true
+is-card: true
+view-if: international_relations_timer <= 0
+on-arrival: month_actions += 1; international_relations_timer += 6
+tags: global_affairs
+
+= International Relations
+
+- @america: Building relationship with our home country could help benefit us in the long run.
+- @un: Expand our reach towards the biggest organization that aims for world peace.
+- @eu: 
+- @icc: Persuade the ICC to legalize the foundation's actions.
+
+@america
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; america_relation += 1
+
+@un
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; un_relation += 1
+
+@eu
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; un_relation +=1
+
+@icc
+subtitle: -1 resources (WARNING SIGN INSERT WARNING SIGN OH NOOOO)
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; exposure += 100
+
+They ratted you out wallahi ggs

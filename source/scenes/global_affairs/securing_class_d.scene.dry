@@ -8,7 +8,7 @@ tags: global_affairs
 
 = Securing Class-Ds
 
-Whether or not we are in need of Class-D personnels, the site is always requires Class-D personnel whether for tests or other activities. How should we secure Class-Ds?
+Regardless of violating ethics and basic human rights, The site has no choice but to use Class-D personnel whether for tests or other activities. How should we secure Class-Ds?
 
 - @inmate: Death row inmates, our usual approach.
 - @criminals: Criminals convicted of serious crimes.
@@ -22,16 +22,20 @@ choose-if: resources >= 2 and inmate_timer <= 0
 unavailable-subtitle: [? if resources <= 1 : Not enough resources. ?][? if inmate_timer >= 1 : There are currently no death row inmates we could secure. ?]
 on-arrival: resources -= 2; inmate_timer += 2; class_d += 10; class_d_strength += 5; class_d_riot += 2; exposure += 1
 
+We have secured inmates convicted of crimes punishable by death as Class-D personnels from various high security prisons.
+
 @criminals
 subtitle: -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: resources <= 1 : Not enough resources.
-on-arrival: resources -= 2; inmate_timer += 2; class_d += 20; class_d_strength += 5; class_d_riot += 5; exposure += 2
+on-arrival: resources -= 2; class_d += 20; class_d_strength += 5; class_d_riot += 5; exposure += 2
+
+We have secured criminals aa Class-D personnels from various prisons.
 
 @nhi
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 2; class_d += 15; class_d_riot += 1; exposure += 5; ethics_commitee_relation -= 10; ethics_commitee_relation -= 5 if resources <= 1; ethics_commitee_relation += 3 if inmate_timer >= 1
+on-arrival: resources -= 1; class_d += 15; class_d_riot += 1; exposure += 5; ethics_commitee_relation -= 10; ethics_commitee_relation -= 5 if resources <= 1; ethics_commitee_relation += 3 if inmate_timer >= 1
 
 We have activated protocol 12 to secure NHIs as Class-D personnels. Whether we did or did not do this in time of duress, the Ethics Committee are displeased and reviewing our actions.
