@@ -27,10 +27,10 @@ We have secured inmates convicted of crimes punishable by death as Class-D perso
 @criminals
 subtitle: -2 resources
 choose-if: resources >= 2
-unavailable-subtitle: resources <= 1 : Not enough resources.
-on-arrival: resources -= 2; class_d += 20; class_d_strength += 5; class_d_riot += 5; exposure += 2
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 2; class_d += 20; class_d_strength += 5; class_d_riot += 5; exposure += 2; ethics_commitee_relation -= 3
 
-We have secured criminals aa Class-D personnels from various prisons.
+We have secured criminals convited of serious crimes as Class-D personnels from various prisons.
 
 @nhi
 subtitle: -1 resources
