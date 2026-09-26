@@ -2,6 +2,7 @@ title: Internal Defense
 new-page: true
 on-arrival: month_actions += 1; internal_defense_timer += 6
 is-card: true
+card-image:
 tags: inter_affairs
 
 = random stuff
