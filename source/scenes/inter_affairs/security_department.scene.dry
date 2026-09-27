@@ -5,6 +5,7 @@ on-arrival: month_actions += 1
 card-image: SD.jpeg
 frequency: 100
 tags: inter_affairs
+
 = Security Department
 
 For better or worse, the SCP Foundation cannot exist without the Security Department, the Security Department is the one that puts foundation in the SCP Foundation.
@@ -26,7 +27,8 @@ go-to: security_department
 
 
 @recruit
-go-to: recruit
+subtitle: TEST
+on-arrival: resources -= 1
 
 @loyalty
 subtitle: -1 resources
