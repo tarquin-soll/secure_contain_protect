@@ -5,6 +5,9 @@ on-arrival: month_actions += 1
 card-image: SD.jpeg
 frequency: 100
 tags: inter_affairs
+go-to: SD
+
+@SD
 
 = Security Department
 
@@ -22,8 +25,12 @@ TEST
 - @TEST: TEST
 - @BACK: BACK
 
+@TEST
+subtitle: TEST
+on-arrival: resources -= 1
+
 @BACK
-go-to: security_department
+go-to: SD
 
 
 @recruit
