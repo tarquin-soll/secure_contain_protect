@@ -14,28 +14,32 @@ go-to: SD
 For better or worse, the SCP Foundation cannot exist without the Security Department, the Security Department is the one that puts foundation in the SCP Foundation.
 Secure. Contain. Protect.
 
+- @actions: Order the Security Department.
 - @operations: Conduct operations.
 - @recruit: Recruit more security personnels.
 - @loyalty: Improve the loyaly of security personnels.
+- @root: We either don't want or cannot do anything regarding the security department.
+- @easy_discard
+
+@actions
+
+The Security Department awaits your commands.
+
+- @strict: Enforce stricter rules to keep Class-D personnels in check.
+- @back: Return
+
+@strict
+on-arrival:
 
 @operations
 
-TEST
+Here are the list of operations that we can entrust our security guards with.
 
-- @TEST: TEST
-- @BACK: BACK
-
-@TEST
-subtitle: TEST
-on-arrival: resources -= 1
-
-@BACK
-go-to: SD
+- @back: Return
 
 
 @recruit
-subtitle: TEST
-on-arrival: resources -= 1
+on-arrival:
 
 @loyalty
 subtitle: -1 resources
@@ -43,4 +47,5 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 
-doesn't do anything yet
+@back
+go-to: SD
