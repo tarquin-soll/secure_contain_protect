@@ -18,10 +18,11 @@ Secure. Contain. Protect.
 - @operations: Conduct operations.
 - @recruit: Recruit more security personnels.
 - @loyalty: Improve the loyaly of security personnels.
-- @root: We either don't want or cannot do anything regarding the security department.
+- @root: We either don't want or cannot do anything regarding the security department at the moment.
 - @easy_discard
 
 @actions
+subtitle: W.I.P
 
 The Security Department awaits your commands.
 
@@ -35,8 +36,13 @@ on-arrival:
 
 Here are the list of operations that we can entrust our security guards with.
 
+- @investigate: Investigate and handle anyone suspected of trying to instigate a riot.
+- @curb: Handle the mob of Class-Ds causing trouble.
 - @back: Return
 
+@investigate
+
+@curb
 
 @recruit
 on-arrival:
