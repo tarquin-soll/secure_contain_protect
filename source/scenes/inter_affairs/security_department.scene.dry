@@ -1,0 +1,31 @@
+title: Security Department
+new-page: true
+is-card: true
+on-arrival: month_actions += 1
+card-image: SD.jpeg
+frequency: 100
+tags: inter_affairs
+
+= Security Department
+
+For better or worse, the SCP Foundation cannot exist without the Security Department, the Security Department is the one that puts foundation in the SCP Foundation.
+Secure. Contain. Protect.
+
+- @operations: Conduct operations.
+- @recruit: Recruit more security personnels.
+- @loyalty: Improve the loyaly of security personnels.
+
+@operations
+
+W.I.P
+
+@recruit
+go-to: recruit
+
+@loyalty
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1
+
+doesn't do anything yet

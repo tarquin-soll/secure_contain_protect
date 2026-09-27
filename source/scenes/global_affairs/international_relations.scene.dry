@@ -10,7 +10,8 @@ tags: global_affairs
 - @america: Building relationship with our home country could help benefit us in the long run.
 - @un: Expand our reach towards the biggest organization that aims for world peace.
 - @eu: Approach the European Union.
-- @icc: Persuade the ICC to legalize the foundation's actions.
+- @root: We don't need to form contracts for now.
+- @easy_discard
 
 @america
 subtitle: -1 resources
@@ -18,22 +19,20 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; america_relation += 1
 
+We decided to approach America.
+
 @un
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; un_relation += 1
 
+We decided to approach the United Nations.
+
 @eu
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; un_relation +=1
+on-arrival: resources -= 1; eu_relation += 1
 
-@icc
-subtitle: -1 resources (WARNING SIGN INSERT WARNING SIGN OH NOOOO)
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; exposure += 100
-
-They ratted you out wallahi ggs
+We decided to approach the European Union.
