@@ -42,7 +42,7 @@ Here are the list of operations that we can entrust our security guards with.
 
 @investigate
 subtitle: -1 resources
-view-if: class_d_riot >= 40 && class_d_riot <= 59
+view-if: class_d_riot >= 40 and class_d_riot <= 59
 choose-if: resources >= 1; investigation_sd_timer <= 0
 unavailable-subtitle: Not enough resources or ongoing investigation (I'll seperate these later)
 on-arrival: resources -= 1; class_d_riot -= 8; investigation_sd_timer += 2
@@ -57,7 +57,7 @@ on-arrival: resources -= 2; class_d_riot -= 15
 Blood must be spilled for the sake of peace.
 
 @recruit
-on-arrival:
+go-to: SD
 
 @loyalty
 subtitle: -1 resources
