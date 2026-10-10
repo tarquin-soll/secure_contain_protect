@@ -47,9 +47,9 @@ Q.class_d = 10;
 // the state of the foundation
 Q.security_dissent = 1;
 Q.researchers_loyalty =  .6;
-Q.security_strength = 40;
+Q.security_strength = 1.4;
 Q.class_d_strength = 0;
-Q.class_d_riot = 60;
+Q.class_d_riot = 0.6;
 
 // organisations
 Q.chaos_insurgency = 50;
