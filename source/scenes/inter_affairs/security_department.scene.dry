@@ -30,7 +30,7 @@ The Security Department awaits your commands.
 - @back: Return
 
 @strict
-on-arrival:
+on-arrival: 
 
 @operations
 
@@ -45,14 +45,14 @@ subtitle: -1 resources
 view-if: class_d_riot >= 40 and class_d_riot <= 59
 choose-if: resources >= 1 and investigation_sd_timer <= 0
 unavailable-subtitle: Not enough resources or ongoing investigation (I'll seperate these later)
-on-arrival: resources -= 1; class_d_riot -= 8; investigation_sd_timer += 2
+on-arrival: resources -= 1; class_d_riot -= 0.08; investigation_sd_timer += 2
 
 @curb
 subtitle: -2 resources
-view-if: class_d_riot >= 60
+view-if: class_d_riot >= 0.6
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 2; class_d_riot -= 15
+on-arrival: resources -= 2; class_d_riot -= 0.15
 
 Blood must be spilled for the sake of peace.
 
