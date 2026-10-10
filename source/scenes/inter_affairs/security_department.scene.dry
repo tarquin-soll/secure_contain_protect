@@ -32,7 +32,7 @@ The Security Department awaits your commands.
 @strict
 choose-if: class_d_riot <= 0.6
 unavailable-subtitle: There is currently an ongoing riot.
-on-arrival: 
+on-arrival:
 
 @operations
 
@@ -48,6 +48,8 @@ view-if: class_d_riot >= 0.40 and class_d_riot <= 0.59
 choose-if: resources >= 1 and investigation_sd_timer <= 0
 unavailable-subtitle: [? if resources <= 0 and investigation_sd_timer <= 0: Not enough resources. ?][? if investigation_sd_timer >= 1 : There is currently an ongoing investigation. ?]
 on-arrival: resources -= 1; class_d_riot -= 0.08; investigation_sd_timer += 2
+
+We have decided to run a routine check investigate suspicious class-d personnels, class-ds found trying to instigate a riot and those that have connection with the Chaos Insurgents are taken care of.
 
 @curb
 subtitle: -2 resources
