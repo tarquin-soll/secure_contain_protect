@@ -1,7 +1,7 @@
 
 # status
-(0..9) In check
-(10..24) Tensed
-(25..39) Aggressive
-(40..59) Riot Brewing
-(60..) Riot
+(0..0.09) In check
+(0.10..0.24) Tensed
+(0.25..0.39) Aggressive
+(0.40..0.59) Riot Brewing
+(0.60..) Riot
