@@ -26,7 +26,7 @@ Resources available: [+ resources +]
 
 [?  if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Class-D status: [+ class_d_riot : class_d_riot +]
+Class-D status: [+ class_d +]k [+ class_d_riot : class_d_riot +]
 
 = Government
 
