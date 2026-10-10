@@ -46,7 +46,7 @@ Here are the list of operations that we can entrust our security guards with.
 subtitle: -1 resources
 view-if: class_d_riot >= 0.40 and class_d_riot <= 0.59
 choose-if: resources >= 1 and investigation_sd_timer <= 0
-unavailable-subtitle: [? if resource < 1 and investigation_sd_timer <= 0 : Not enough resources ?] [? investigation_sd_timer >= 1 : There is currently an ongoing investigation ?]
+unavailable-subtitle: [? if resources < 1 and investigation_sd_timer <= 0 : Not enough resources ?] [? investigation_sd_timer >= 1 : There is currently an ongoing investigation ?]
 on-arrival: resources -= 1; class_d_riot -= 0.08; investigation_sd_timer += 2
 
 @curb
