@@ -2,12 +2,13 @@ title: Security Department
 new-page: true
 is-card: true
 on-arrival: month_actions += 1
-card-image: SD.jpeg
+card-image: img/SD.jpeg
 frequency: 100
 tags: inter_affairs
 go-to: SD
 
 = Security Department
+
 @SD
 
 For better or worse, the SCP Foundation cannot exist without the Security Department, the Security Department is the one that puts foundation in the SCP Foundation.
@@ -45,7 +46,7 @@ Here are the list of operations that we can entrust our security guards with.
 subtitle: -1 resources
 view-if: class_d_riot >= 0.40 and class_d_riot <= 0.59
 choose-if: resources >= 1 and investigation_sd_timer <= 0
-unavailable-subtitle: test
+unavailable-subtitle: [? if resources <= 0 : Not enough resources. ?][? if investigation_sd_timer >= 1 : There is currently an ongoing investigation. ?]
 on-arrival: resources -= 1; class_d_riot -= 0.08; investigation_sd_timer += 2
 
 @curb
