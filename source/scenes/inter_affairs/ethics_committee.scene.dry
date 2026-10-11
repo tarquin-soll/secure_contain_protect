@@ -1,0 +1,26 @@
+title: Ethics Committee
+new-page: true
+view-if: ethics_timer <= 0 and ethics_commitee_relation >= 60
+on-arrival: month_actions += 1; ethics_timer += 6
+is-card: true
+card-image: img/Ethics_Committee.webp
+tags: inter_affairs
+
+= Ethics Committee
+
+Our recent action has been questioned by the Ethics Committee whether our actions were following the frameworks in the code of ethics.
+
+- @detailed: Provide detailed accounts of our actions.
+- @root: Let's do this later.
+- @easy_discard
+
+@detailed
+subtitle: -3 resources
+choose-if: resources >= 3
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 3; ethics_commitee_relation += 20
+
+We have provided detailed accounts that our actions were justified and within the framework of the code of ethics. The committee is satisfied.
+
+
+
