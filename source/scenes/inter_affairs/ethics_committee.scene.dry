@@ -1,6 +1,6 @@
 title: Ethics Committee
 new-page: true
-view-if: ethics_timer <= 0 and ethics_commitee_relation >= 60
+view-if: ethics_timer <= 0 and ethics_commitee_relation <= 60
 on-arrival: month_actions += 1; ethics_timer += 6
 is-card: true
 card-image: img/Ethics_Committee.webp
