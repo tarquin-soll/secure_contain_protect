@@ -1,0 +1,29 @@
+title: SCP Foundation
+new-page: true
+is-card: true
+view-if: scp_foundation_timer <= 0
+on-arrival: month_actions += 1; scp_foundation_timer += 3
+tags: global_affairs
+
+= SCP Foundation
+
+- @build: Build a Front Company to help us in hiring experts in their field.
+- @expand: Expand the SCP Foundation to accommodate for more personnels or anomalies
+- @root: We don't need to form contracts for now.
+- @easy_discard
+
+@build
+subtitle: -1 budget
+choose-if: budget >= 1
+unavailable-subtitle: Not enough budget.
+on-arrival: budget -= 1; build += 1
+
+We have decided to build a Front Company. This will make hiring researchers, engineers and military combatants easier in the future. [? if build == 1 : Hi Im testing this. ?]
+
+@expand
+subtitle: -1 budget
+choose-if: budget >= 1
+unavailable-subtitle: Not enough budget.
+on-arrival: budget -= 1; expansion += 1
+
+We have decided to expand the SCP Foundation
