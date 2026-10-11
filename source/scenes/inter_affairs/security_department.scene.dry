@@ -56,7 +56,7 @@ subtitle: -2 resources
 view-if: class_d_riot >= 0.6
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 2; class_d_riot -= 0.15
+on-arrival: resources -= 2; class_d_riot -= 0.15; ethics_commitee_relation -= 3
 
 Blood must be spilled for the sake of peace.
 
