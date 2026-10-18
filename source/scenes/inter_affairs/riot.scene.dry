@@ -1,4 +1,4 @@
-title: Confronting Class-Ds
+title: Confronting Class-Ds WIP
 new-page: true
 is-card: true
 view-if: class_d_riot >= 60
@@ -8,11 +8,5 @@ tags: inter_affairs
 
 = Confronting Class-Ds
 
-class d riot class d riot
-
-- @curb: kill kill kill kill
 - @root: Our security personnels can't handle the riot for now.
 - @easy_discard
-
-@curb
-on-arrival: security -= ((security*security_strength*security_loyalty)/2) and class_d -= class_d*class_d_strength*class_d_riot if 0 < (security*security_strength*security_loyalty - class_d_strength*class_d_riot*class_d)
