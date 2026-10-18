@@ -2,7 +2,7 @@
 # Foundation Exposure
 (..4.9) {!<span style="color: #E7E7E7;"><i>Concealed</i></span>!}
 (5..14.9) {!<span style="color: #CFCFCF;">Minimal</span>!}
-(15..29.9) {<span style="color: #B6B6B6;">Low</span>!!}
+(15..29.9) {!<span style="color: #B6B6B6;">Low</span>!}
 (30..49.9) {!<span style="color: #9E9E9E;">Medium</span>!}
 (50..64.9) {!<span style="color: #868686;">High</span>!}
 (65..74.9) {!<span style="color: #6E6E6E;">Very High</span>!}
