@@ -11,7 +11,6 @@ if (Q.month_actions >= 1) {
         Q.year += 1;
         Q.resources += Q.income;
         Q.funds += Q.funds_income;
-        }
     }
     // decrement timers
     for (timer of Q.timers) {
